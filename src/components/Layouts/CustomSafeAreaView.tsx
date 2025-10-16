@@ -11,7 +11,7 @@ export default function CustomSafeAreaView({children}: Props) {
 
 const styles = StyleSheet.create({
   mainGrap: {
-    flex: 1,
+    flex:1,
     backgroundColor:'white', 
   },
 });
