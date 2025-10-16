@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   mainGrap: {
     height: barHeight,
     borderRadius,
-    backgroundColor: Colors.gray,
+    backgroundColor: Colors.gray, //회색 배경
   },
   greenBar: {
     width: Scale.ms(100),

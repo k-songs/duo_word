@@ -4,7 +4,9 @@ import {View, StyleSheet} from 'react-native';
 import {Scale} from '../../../utils';
 import {Colors} from '../../../styles';
 
+
 export const ROW_HEIGHT = Scale.s(50);
+
 
 export default function LabelsChallengeGrid() {
   return (
@@ -18,6 +20,7 @@ export default function LabelsChallengeGrid() {
     </View>
   );
 }
+ 
 
 const styles = StyleSheet.create({
   horizontalLine: {
