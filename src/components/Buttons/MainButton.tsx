@@ -1,23 +1,21 @@
-import React, {useRef, useEffect} from 'react';
-import {View, Text, StyleSheet, Pressable, Animated} from 'react-native';
+import React, { useRef, useEffect } from 'react';
+import { View, Text, StyleSheet, Pressable, Animated } from 'react-native';
 
-import {Colors, Fonts} from '../../styles';
-import {Scale} from '../../utils';
+import { Colors, Fonts } from '../../styles';
+import { Scale } from '../../utils';
 
 export const BUTTON_HEIGHT = Scale.s(45);
-export const ANIM_CONFIG = {duration: 80, useNativeDriver: true};
+export const ANIM_CONFIG = { duration: 80, useNativeDriver: true };
 
 interface MainButtonProps {
   label: string;
   callback: () => void;
   testID?: string;
   disabled?: boolean;
-  type?: 'primary';
 }
 
 export default function MainButton({
   label,
-  type = 'primary',
   testID,
   disabled = false,
   callback,
@@ -37,6 +35,7 @@ export default function MainButton({
 
   function onPressIn() {
     animate(2);
+
   }
 
   function onPressOut() {
@@ -52,10 +51,10 @@ export default function MainButton({
     );
   } else {
     return (
-      <Pressable {...{onPressIn, onPressOut, testID}}>
+      <Pressable {...{ onPressIn, onPressOut, testID }}>
         <View style={styles.mainGrap}>
           <Animated.View
-            style={[styles.mainButton, {transform: [{translateY}]}]}>
+            style={[styles.mainButton, { transform: [{ translateY }] }]}>
             <Text style={styles.btnLabel}>{label}</Text>
           </Animated.View>
           <View style={styles.background} />

@@ -8,8 +8,8 @@ export const SCREE_WIDTH = Dimensions.get('window').width;
 
 /**
  *
- * @param words
- * @returns
+ * @param words  애니메이션 참조를 생성할 단어들의 배열입니다.
+ * @returns   단어에 대한 애니메이션 값과 위치 정보를 포함하는 객체입니다.
  */
 export function genereteRefs(words: string[]) {
   let wordsRefs: Words = {};
