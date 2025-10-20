@@ -80,7 +80,11 @@ import org.apache.tools.ant.taskdefs.condition.Os
 
 project.ext.react = [
     enableHermes: true,  // clean and rebuild if changing
+    hermesEnabled: true, // for react-native-reanimated compatibility
 ]
+
+// Add hermesEnabled at project level for react-native-reanimated compatibility
+project.ext.hermesEnabled = true
 
 apply from: "../../node_modules/react-native/react.gradle"
 

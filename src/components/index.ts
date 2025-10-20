@@ -12,3 +12,5 @@ export {default as XButton} from './Buttons/XButton';
 export {default as XsolidIcon} from './Icons/XSolid';
 export {default as HeartSolidIcon} from './Icons/HeartSolid';
 export {default as RetweetSolidIcon} from './Icons/RetweetSolid';
+// Game
+export {default as ScoreBoard} from './ScoreBoard';

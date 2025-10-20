@@ -7,6 +7,7 @@ enum Colors {
     greenDark = '#1B9B01',
     white = '#ffffff',
     orange = '#EEA351',
+    primary = '#61c231', // green과 동일
 }
 
 export default Colors;
